@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
         - name: account
-          image: heavyflood/scg:release
+          image: heavyflood/account:release
           imagePullPolicy: Always
           ports:
             - name: http
