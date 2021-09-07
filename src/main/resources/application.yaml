@@ -1,2 +1,13 @@
 server:
   port: 9091
+
+---
+spring:
+  cloud:
+    kubernetes:
+      discovery:
+        service-name: account
+        primary-port-name: 9091
+        enabled: true
+        all-namespaces: true
+        wait-cache-ready: false  
